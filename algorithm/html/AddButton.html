@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <div id="btn"></div>
+    </body>
+    <script type="text/javascript">
+
+        for(let i=1;i<=20;i++)
+        {
+            let btnObj=document.createElement("button");
+            btnObj.onclick = function aClick() {
+                alert("Hello " + i);
+            }
+            let textObj=document.createTextNode(""+i);
+            btnObj.appendChild(textObj);
+            let enterObj=document.createElement("br");
+            document.body.appendChild(btnObj);
+            document.body.appendChild(enterObj);
+        }
+
+    </script>
+</html>
